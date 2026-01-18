@@ -1,4 +1,4 @@
-package com.tradeops.tradeops_api.domain;
+package com.tradeops.domain;
 
 import org.junit.jupiter.api.Test;
 import java.util.UUID;

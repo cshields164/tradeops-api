@@ -1,4 +1,4 @@
-package com.tradeops.tradeops_api;
+package com.tradeops;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.tradeops.tradeops_api;
+package com.tradeops;
 
 import java.util.Map;
 import org.springframework.web.bind.annotation.GetMapping;

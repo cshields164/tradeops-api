@@ -1,11 +1,10 @@
-package com.tradeops.tradeops_api.domain;
+package com.tradeops.domain;
 
 import java.math.BigDecimal;
 import java.time.Instant;
 import java.util.UUID;
 
 public class Trade {
-    private UUID id;
     private UUID portfolioId;
     private Instrument instrument;
     private Side side;

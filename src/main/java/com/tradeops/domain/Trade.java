@@ -5,12 +5,13 @@ import java.time.Instant;
 import java.util.UUID;
 
 public class Trade {
-    private UUID portfolioId;
-    private Instrument instrument;
-    private Side side;
-    private int quantity;
-    private BigDecimal price;
-    private Instant tradeTime;
+    
+    private final UUID portfolioId;
+    private final Instrument instrument;
+    private final Side side;
+    private final int quantity;
+    private final BigDecimal price;
+    private final Instant tradeTime;
 
     public Trade(Instrument instrument, Side side, int quantity, java.math.BigDecimal price, java.time.Instant tradeTime, UUID portfolioId) {
         if (instrument == null) {

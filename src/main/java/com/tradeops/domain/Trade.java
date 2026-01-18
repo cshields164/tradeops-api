@@ -5,7 +5,7 @@ import java.time.Instant;
 import java.util.UUID;
 
 public class Trade {
-    
+
     private final UUID portfolioId;
     private final Instrument instrument;
     private final Side side;
@@ -13,7 +13,7 @@ public class Trade {
     private final BigDecimal price;
     private final Instant tradeTime;
 
-    public Trade(Instrument instrument, Side side, int quantity, java.math.BigDecimal price, java.time.Instant tradeTime, UUID portfolioId) {
+    public Trade(Instrument instrument, Side side, int quantity, BigDecimal price, Instant tradeTime, UUID portfolioId) {
         if (instrument == null) {
             throw new IllegalArgumentException("Instrument cannot be null");
         }
@@ -23,14 +23,14 @@ public class Trade {
         if (quantity <= 0) {
             throw new IllegalArgumentException("Quantity must be greater than 0");
         }
-        if (price == null || price.compareTo(java.math.BigDecimal.ZERO) <= 0) {
+        if (price == null || price.compareTo(BigDecimal.ZERO) <= 0) {
             throw new IllegalArgumentException("Price must be greater than 0");
         }
         if (tradeTime == null) {
             throw new IllegalArgumentException("TradeTime cannot be null");
         }
         if (portfolioId == null) {
-            throw new IllegalArgumentException("PortfolioId cannot be null or blank");
+            throw new IllegalArgumentException("PortfolioId cannot be null");
         }
         this.instrument = instrument;
         this.side = side;
